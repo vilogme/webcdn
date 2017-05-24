@@ -2,6 +2,7 @@ $(document).ready(function () {
 
     $('form').on('submit', function(event) {
         var btngen = $('#generator').button('loading')
+        var server_play = Math.floor(Math.random() * 3) + 1;
         $.ajax({
                 data: {
                     url: $('#url').val(),
@@ -23,9 +24,9 @@ $(document).ready(function () {
                     $('#url-error').addClass('hidden');
                     $('#url-valid').removeClass('hidden');
                     $('#video-info').removeClass('hidden').after('<hr />');
-                    $('#video-url').val(data.videoUrl);
-                    $('#video-public-url').val(data.publicUrl);
-                    $('#view-video').attr('href', data.videoUrl);
+                    $('#video-url').val(data.video_url);
+                    $('#video-public-url').val('https://s'+server_play+'.vilog.me/watch?v='+data.public_code);
+                    $('#view-video').attr('href', data.video_url);
                     $("#generate-form").addClass('hidden');
                 }
                 btngen.button('reset');
