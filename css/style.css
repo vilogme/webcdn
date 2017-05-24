@@ -4,6 +4,7 @@
     src: url(../fonts/proximanova-regular-webfont.eot?#iefix) format('embedded-opentype'), url(../fonts/proximanova-regular-webfont.woff) format('woff'), url('../fonts/proximanova-regular-webfont.woff2') format('woff2'), url(../fonts/proximanova-regular-webfont.ttf) format('truetype'), url(../fonts/proximanova-regular-webfont.svg#proxima_nova_rgregular) format('svg')
 }
 body {
+    background-color: #34495e;
     color: #666668;
     font-family: 'Proxima Nova',Helvetica,Arial,sans-serif;
 }
