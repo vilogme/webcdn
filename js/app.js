@@ -6,7 +6,7 @@ $(document).ready(function () {
         $.ajax({
                 data: {
                     url: $('#url').val(),
-                    gCaptcha: grecaptcha.getResponse() 
+                    g_captcha: grecaptcha.getResponse() 
                 },
                 type: 'POST',
                 url: '/generate'
